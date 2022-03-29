@@ -40,9 +40,9 @@ class Isa :
         elif nb < 1000 : res = 3 
         elif nb < 10000 : res = 4
         elif nb < 100000 : res = 5
-        elif nb < 10000000 : res = 6
+        elif nb < 1000000 : res = 6
         elif nb < 10000000000: res = 7
-        elif nb < 1000000000000000000 : res = 8
+        elif nb < 100000000000 : res = 8
         else : res = 10
         return res
 
@@ -101,5 +101,5 @@ class Isa :
         return res
 
     
-rivo = Isa("2000000000")
-print(rivo)
+rivo = Isa("1000000")
+print(rivo) 
