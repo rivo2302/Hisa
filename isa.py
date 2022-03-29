@@ -20,7 +20,8 @@ class Isa :
             sys.exit()
         self.item = int(item)
     def __str__(self) :
-        return self.__length(45)
+        return self.__main(self.item)
+
 
     def __length(self, integer : int ) -> int:
         """
@@ -51,3 +52,4 @@ class Isa :
             
 
 rivo = Isa("75")
+print(rivo)
