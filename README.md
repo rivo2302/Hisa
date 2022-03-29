@@ -16,14 +16,14 @@
 ## Installation
 
 ```s
-pip install Isa
+pip install Hisa
 ```
 ## Usage
 
 ```s
-from isa import Isa
+from hisa import Hisa
 
-letters = Isa(155)
+letters = Hisa(155)
 print(letters)
 ```
 

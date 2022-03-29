@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-    Isa : Python module that translates a number
+    Hisa : Python module that translates a number
     into Malagasy letters 
 
     Author : rivo2302 | www.rivo.iteam-s.mg
 """
 
 import sys
-class Isa :
+class Hisa :
     """
        The class that contains each method of the model.
     """
@@ -17,7 +17,7 @@ class Isa :
         self.zato = ["","zato","roanjato","telonjato","efajato","dimanjato","eninjato","fitonjato","valonjato","sivanjato"]
         
         if str(item).isdigit() == False :
-            print(f"Error  : The argument must Isa(args) be an integer")
+            print(f"Error  : The argument must Hisa(args) be an integer")
             sys.exit()
         self.item = int(item)
 
@@ -59,32 +59,32 @@ class Isa :
         if nb%100 ==  0 : return self.zato[nb//100]
         elif nb%100 ==  1 : return "iraika amby zato"
         elif nb // 100 == 1 :
-            return (f"{Isa(nb%100)} amby zato")
-        return (f"{Isa(nb%100)} sy {self.zato[nb//100]}")
+            return (f"{Hisa(nb%100)} amby zato")
+        return (f"{Hisa(nb%100)} sy {self.zato[nb//100]}")
         
     def __efatra (self , nb : int) -> str : 
         if nb%1000 == 0 :
             if nb//1000 == 1 : return "arivo"
             else : return f"{self.tokana[nb//1000]} arivo"
-        x = Isa(nb%1000)
+        x = Hisa(nb%1000)
         if nb//1000 == 1 : return f"{x} sy arivo"
         return f"{x} sy {self.tokana[nb//1000]} arivo"
 
     def __dimy (self , nb : int) -> str : 
         if nb%10000 == 0 : return f"{self.tokana[nb//10000]} alina"
-        return f"{Isa(nb%10000)} sy {self.tokana[nb//10000]} alina"
+        return f"{Hisa(nb%10000)} sy {self.tokana[nb//10000]} alina"
 
     def __enina (self , nb : int) -> str : 
         if nb%100000 == 0 : return f"{self.tokana[nb//100000]} hetsy"
-        return f"{Isa(nb%100000)} sy {self.tokana[nb//100000]} hetsy"
+        return f"{Hisa(nb%100000)} sy {self.tokana[nb//100000]} hetsy"
 
     def __fito (self , nb : int) -> str : 
-        if nb%1000000 == 0 : return f"{Isa(nb//1000000)} tapitrisa"
-        return f"{Isa(nb%1000000)} sy {Isa(nb//1000000)} tapitrisa"
+        if nb%1000000 == 0 : return f"{Hisa(nb//1000000)} tapitrHisa"
+        return f"{Hisa(nb%1000000)} sy {Hisa(nb//1000000)} tapitrHisa"
 
     def __valo (self , nb : int) -> str : 
-        if nb%1000000000 == 0 : return f"{Isa(nb//1000000000)} lavitrisa"
-        return f"{Isa(nb%1000000000)} sy {Isa(nb//1000000000)} lavitrisa"
+        if nb%1000000000 == 0 : return f"{Hisa(nb//1000000000)} lavitrHisa"
+        return f"{Hisa(nb%1000000000)} sy {Hisa(nb//1000000000)} lavitrHisa"
 
     def main (self , nb : int) -> str :
         if self.__length(nb) == 1 : res = self.__iray(nb)
