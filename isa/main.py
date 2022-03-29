@@ -20,6 +20,7 @@ class Isa :
             print(f"Error  : The argument must Isa(args) be an integer")
             sys.exit()
         self.item = int(item)
+
     def __str__(self) :
         return self.main(self.item)
 
@@ -94,6 +95,6 @@ class Isa :
         elif self.__length(nb) == 6 : res = self.__enina(nb)
         elif self.__length(nb) == 7 : res = self.__fito(nb)
         elif self.__length(nb) == 8 : res = self.__valo(nb)
-        else : return "Too  much integer"
+        else : res = "Too  much integer"
         return res
 
