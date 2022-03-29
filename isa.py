@@ -17,7 +17,7 @@ class Isa :
         self.tokana = ["","ray","roa","telo","efatra","dimy","enina","fito","valo","sivy","folo"]
         self.folo = ["","folo","roapolo","telopolo","efapolo","dimampolo","enimpolo","fitopolo","valopolo","sivifolo"]
         self.zato = ["","zato","roanjato","telonjato","efajato","dimanjato","eninjato","fitonjato","valonjato","sivanjato"]
-
+        
         if str(item).isdigit() == False :
             print(f"Error  : The argument must Isa(args) be an integer")
             sys.exit()
@@ -40,9 +40,10 @@ class Isa :
         elif nb < 1000 : res = 3 
         elif nb < 10000 : res = 4
         elif nb < 100000 : res = 5
-        elif nb < 1000000 : res = 6
-        elif nb < 1000000000 : res = 7
-        elif nb < 1000000000000 : res = 8
+        elif nb < 10000000 : res = 6
+        elif nb < 10000000000: res = 7
+        elif nb < 1000000000000000000 : res = 8
+        else : res = 10
         return res
 
     def __iray(self , nb : int) -> str:
@@ -58,10 +59,10 @@ class Isa :
     
     def __telo (self , nb : int) -> str :
         if nb%100 ==  0 : return self.zato[nb//100]
-        x = Isa(nb%100)
-        if nb // 100 == 1 :
-            return (f"{x} amby zato")
-        return (f"{x} sy {self.zato[nb//100]}")
+        elif nb%100 ==  1 : return "iraika amby zato"
+        elif nb // 100 == 1 :
+            return (f"{Isa(nb%100)} amby zato")
+        return (f"{Isa(nb%100)} sy {self.zato[nb//100]}")
         
     def __efatra (self , nb : int) -> str : 
         if nb%1000 == 0 :
@@ -96,8 +97,9 @@ class Isa :
         elif self.__length(nb) == 6 : res = self.__enina(nb)
         elif self.__length(nb) == 7 : res = self.__fito(nb)
         elif self.__length(nb) == 8 : res = self.__valo(nb)
+        else : return "Be loatra kosa zany eeeee "
         return res
 
     
-rivo = Isa("111111111111")
+rivo = Isa("29947")
 print(rivo)
