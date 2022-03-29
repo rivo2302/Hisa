@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 """
     Isa : Python module that translates a number
     into Malagasy letters 
@@ -8,7 +7,6 @@
 """
 
 import sys
-
 class Isa :
     """
        The class that contains each method of the model.
@@ -25,7 +23,6 @@ class Isa :
     def __str__(self) :
         return self.main(self.item)
 
-
     def __length(self, nb : int ) -> int:
         """
             Method that calculates the length of the number.
@@ -33,7 +30,7 @@ class Isa :
             nb (_integer_): _description_
 
         Returns:
-            _integer_: _len of the number in args_
+            _integer_: _len of the number in arguments 
         """
         if nb < 10 : res = 1
         elif nb < 100 : res = 2
@@ -41,8 +38,8 @@ class Isa :
         elif nb < 10000 : res = 4
         elif nb < 100000 : res = 5
         elif nb < 1000000 : res = 6
-        elif nb < 10000000000: res = 7
-        elif nb < 100000000000 : res = 8
+        elif nb < 1000000000: res = 7
+        elif nb < 1000000000000 : res = 8
         else : res = 10
         return res
 
@@ -97,9 +94,5 @@ class Isa :
         elif self.__length(nb) == 6 : res = self.__enina(nb)
         elif self.__length(nb) == 7 : res = self.__fito(nb)
         elif self.__length(nb) == 8 : res = self.__valo(nb)
-        else : return "Be loatra kosa zany eeeee "
+        else : return "Too  much integer"
         return res
-
-    
-rivo = Isa("1000000")
-print(rivo) 
