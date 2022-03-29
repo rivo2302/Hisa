@@ -96,3 +96,4 @@ class Isa :
         elif self.__length(nb) == 8 : res = self.__valo(nb)
         else : return "Too  much integer"
         return res
+
