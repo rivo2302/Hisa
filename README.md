@@ -5,7 +5,7 @@
     Author : rivo2302 | www.rivo.iteam-s.mg
 </p>
 
-<h1 align=center><img src="https://readme-typing-svg.herokuapp.com?font=jetbrains+mono&color=%teal&size=23&center=true&vCenter=true&lines=ISa;integers to 🇲🇬 letters " alt="Description">
+<h1 align=center><img src="https://readme-typing-svg.herokuapp.com?font=jetbrains+mono&color=%teal&size=23&center=true&vCenter=true&lines=ISA;integers%2C+to%2C+🇲🇬%2C+letters" alt="Description">
 </h1>
 
 
@@ -32,6 +32,6 @@ print(letters)
 dimy amby dimampolo amby zato
 ```
 
-<di0 align="center">
+<div align="center">
 <img src="https://img.shields.io/badge/-Python-396E9B?style=for-the-badge&logo=python&logoColor=FFFFFF"/> 
 </div>
