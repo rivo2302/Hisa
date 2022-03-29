@@ -99,5 +99,5 @@ class Isa :
         return res
 
     
-rivo = Isa("100000000000")
+rivo = Isa("111111111111")
 print(rivo)
