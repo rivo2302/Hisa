@@ -1,6 +1,6 @@
-# Isa
+# Hisa
 <p >
-    Isa : Python module that translates a number 
+    Hisa : Python module that translates a number 
     into Malagasy🇲🇬 letters  </br> </br>
     Author : rivo2302 | www.rivo.iteam-s.mg
 </p>
@@ -16,7 +16,7 @@
 ## Installation
 
 ```s
-pip install Hisa
+pip install hisa
 ```
 ## Usage
 
