@@ -84,9 +84,9 @@ class Isa :
         return f"{Isa(nb%1000000)} sy {Isa(nb//1000000)} tapitrisa"
 
     def __valo (self , nb : int) -> str : 
-        if nb%1000000 == 0 : return f"{Isa(nb//1000000)} tapitrisa"
-        return f"{Isa(nb%1000000)} sy {Isa(nb//1000000)} tapitrisa"
-        
+        if nb%1000000000 == 0 : return f"{Isa(nb//1000000000)} lavitrisa"
+        return f"{Isa(nb%1000000000)} sy {Isa(nb//1000000000)} lavitrisa"
+
     def main (self , nb : int) -> str :
         if self.__length(nb) == 1 : res = self.__iray(nb)
         elif self.__length(nb) == 2 : res = self.__roa(nb)
@@ -99,5 +99,5 @@ class Isa :
         return res
 
     
-rivo = Isa("100000000")
+rivo = Isa("100000000000")
 print(rivo)
