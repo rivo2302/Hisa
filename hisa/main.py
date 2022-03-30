@@ -2,7 +2,6 @@
 """
     Hisa : Python module that translates a number
     into Malagasy letters 
-
     Author : rivo2302 | www.rivo.iteam-s.mg
 """
 
@@ -29,7 +28,6 @@ class Hisa :
             Method that calculates the length of the number.
         Args:
             nb (_integer_): _description_
-
         Returns:
             _integer_: _len of the number in arguments 
         """
@@ -58,17 +56,15 @@ class Hisa :
     def __telo (self , nb : int) -> str :
         if nb%100 ==  0 : return self.zato[nb//100]
         elif nb%100 ==  1 : return "iraika amby zato"
-        elif nb // 100 == 1 :
-            return (f"{Hisa(nb%100)} amby zato")
+        elif nb // 100 == 1 : return (f"{Hisa(nb%100)} amby zato")
         return (f"{Hisa(nb%100)} sy {self.zato[nb//100]}")
         
     def __efatra (self , nb : int) -> str : 
         if nb%1000 == 0 :
             if nb//1000 == 1 : return "arivo"
             else : return f"{self.tokana[nb//1000]} arivo"
-        x = Hisa(nb%1000)
-        if nb//1000 == 1 : return f"{x} sy arivo"
-        return f"{x} sy {self.tokana[nb//1000]} arivo"
+        if nb//1000 == 1 : return f"{Hisa(nb%1000)} sy arivo"
+        return f"{Hisa(nb%1000)} sy {self.tokana[nb//1000]} arivo"
 
     def __dimy (self , nb : int) -> str : 
         if nb%10000 == 0 : return f"{self.tokana[nb//10000]} alina"
@@ -79,12 +75,12 @@ class Hisa :
         return f"{Hisa(nb%100000)} sy {self.tokana[nb//100000]} hetsy"
 
     def __fito (self , nb : int) -> str : 
-        if nb%1000000 == 0 : return f"{Hisa(nb//1000000)} tapitrHisa"
-        return f"{Hisa(nb%1000000)} sy {Hisa(nb//1000000)} tapitrHisa"
+        if nb%1000000 == 0 : return f"{Hisa(nb//1000000)} tapitrisa"
+        return f"{Hisa(nb%1000000)} sy {Hisa(nb//1000000)} tapitrisa"
 
     def __valo (self , nb : int) -> str : 
-        if nb%1000000000 == 0 : return f"{Hisa(nb//1000000000)} lavitrHisa"
-        return f"{Hisa(nb%1000000000)} sy {Hisa(nb//1000000000)} lavitrHisa"
+        if nb%1000000000 == 0 : return f"{Hisa(nb//1000000000)} lavitrisa"
+        return f"{Hisa(nb%1000000000)} sy {Hisa(nb//1000000000)} lavitrisa"
 
     def main (self , nb : int) -> str :
         if self.__length(nb) == 1 : res = self.__iray(nb)
@@ -97,4 +93,3 @@ class Hisa :
         elif self.__length(nb) == 8 : res = self.__valo(nb)
         else : res = "Too  much integer"
         return res
-

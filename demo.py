@@ -1,4 +1,4 @@
 from hisa import Hisa
 
-letters = Hisa(155)
+letters = Hisa(200005)
 print(letters)

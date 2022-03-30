@@ -5,7 +5,7 @@
     Author : rivo2302 | www.rivo.iteam-s.mg
 </p>
 
-<h1 align=center><img src="https://readme-typing-svg.herokuapp.com?font=jetbrains+mono&color=%teal&size=23&center=true&vCenter=true&lines=ISA%2C+Number%2C+into%2C+Malagasy🇲🇬%2C+letters" alt="Description">
+<h1 align=center><img src="https://readme-typing-svg.herokuapp.com?font=jetbrains+mono&color=%teal&size=23&center=true&vCenter=true&lines=ISA+Number+into+Malagasy🇲🇬+letters" alt="Description">
 </h1>
 
 
