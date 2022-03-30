@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="hisa",  
     packages = ["hisa"],              # This is the name of the package
-    version="0.1.1",                      # The initial release version
+    version="0.1.2",                      # The initial release version
     author="rivo2302",    
     author_email = 'rivo.rajaonarivony@esti.mg',      # Type in your E-Mail
     url = 'https://github.com/rivo2302/Hisa',   # Provide either the link to your github or to your website
