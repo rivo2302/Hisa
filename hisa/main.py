@@ -48,9 +48,10 @@ class Hisa :
     
     def __roa (self , nb : int) -> str :
         if (nb%10) == 0 : return self.folo[nb//10]
-        elif (int(nb//10) == 1) : 
+        elif (nb//10 == 1) : 
             if nb%10 == 1 : return "iraika ambiny folo"
             return f"{self.tokana[nb%10]} ambiny folo"
+        elif (nb%10 == 1) :  return f"iraika amby {self.folo[nb//10]}"
         return f"{self.tokana[nb%10]} amby {self.folo[nb//10]}"
     
     def __telo (self , nb : int) -> str :
